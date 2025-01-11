@@ -4,7 +4,45 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 function App() {
-  return <h1>Hello world</h1>;
+  return (
+    <div>
+      <Hero />
+      <Curve />
+    </div>
+  );
+}
+
+function Hero() {
+  return (
+    <div className="hero">
+      <Header />
+      <Herobody />
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <header className="header">
+      <img src="/logo-light.svg" alt="a logo" className="logo"></img>
+      <button className="header_btn">Apply access</button>
+    </header>
+  );
+}
+
+function Curve() {
+  return <img src="/ornamental.png" alt="a curve" className="curve"></img>;
+}
+
+function Herobody() {
+  return (
+    <div className="hero_content">
+      <h1>
+        Data <span>tailored</span> to your needs.
+      </h1>
+      <button>Learn more</button>
+    </div>
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
