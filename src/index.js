@@ -40,10 +40,15 @@ function Herobody() {
       <h1>
         Data <span>tailored</span> to your needs.
       </h1>
-      <button>Learn more</button>
+      <button className="hero_btn">Learn more</button>
+      <div className="phone-container">
+        <img src="/image-hero.webp" alt="a cellphone" className="phone"></img>
+      </div>
     </div>
   );
 }
+
+function Main() {}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
