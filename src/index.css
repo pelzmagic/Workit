@@ -56,7 +56,7 @@ body {
 }
 h1 {
   font-family: "Fraunces", serif;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--WHITE);
   text-align: center;
 }
@@ -64,7 +64,7 @@ span {
   text-decoration: underline;
 }
 .hero_content {
-  width: 44%;
+  width: 30%;
   border: 1px solid red;
   margin: auto;
   margin-top: 3.5rem;
@@ -82,9 +82,9 @@ span {
 
 .phone-container {
   position: absolute;
-  width: 53%;
+  width: 40%;
   border: 1px solid red;
-  top: 30rem;
+  top: 28rem;
   z-index: 9999;
   left: 50%;
   transform: translateX(-50%);
@@ -92,15 +92,48 @@ span {
 .phone {
   width: 100%;
 }
-/* .left_pattern_container {
-  border: 1px solid red;
-  position: absolute;
-  width: 270px;
-  height: 215px;
-  left: 0;
-  transform: rotate(50deg);
+.main {
+  background-color: var(--GRAY);
+  height: 610px;
+  padding-top: 10rem;
 }
-.left_pattern {
+.features_container {
+  border: 1px solid red;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+.feature_action {
+  color: var(--PURPLE);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 120%;
+  margin-top: 4rem;
+}
+.feature_about {
+  color: var(--PURPLE);
+  font-family: "Manrope", serif;
+  font-size: 1.13rem;
+  line-height: 180%;
+  margin-top: 1.75rem;
+}
+.number {
+  width: 3.5rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--PURPLE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.features_wrapper {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second_curve {
+  border: 1px solid red;
   width: 100%;
-  border: 1px solid yellow;
-} */
+}

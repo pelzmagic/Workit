@@ -8,6 +8,8 @@ function App() {
     <div>
       <Hero />
       <Curve />
+      <Main />
+      <SecondCurve />
     </div>
   );
 }
@@ -48,7 +50,38 @@ function Herobody() {
   );
 }
 
-function Main() {}
+function Main() {
+  return (
+    <main className="main">
+      <div className="features_container">
+        <Feature number="1" action="Actionable insights" about="Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics" />
+        <Feature
+          number="2"
+          action="Data-driven decisions"
+          about="Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data."
+        />
+        <Feature
+          number="3"
+          action="Always affordable"
+          about="Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees"
+        />
+      </div>
+    </main>
+  );
+}
+
+function Feature({ number, action, about }) {
+  return (
+    <div className="features_wrapper">
+      <div className="number">{number}</div>
+      <p className="feature_action">{action}</p>
+      <p className="feature_about">{about}</p>
+    </div>
+  );
+}
+function SecondCurve() {
+  return <img src="/ornamental2.png" alt="second curve" className="second_curve"></img>;
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
