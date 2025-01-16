@@ -10,6 +10,8 @@ function App() {
       <Curve />
       <Main />
       <SecondCurve />
+      <AvartarSection />
+      <Footer />
     </div>
   );
 }
@@ -80,9 +82,48 @@ function Feature({ number, action, about }) {
   );
 }
 function SecondCurve() {
-  return <img src="/ornamental2.png" alt="second curve" className="second_curve"></img>;
+  return <img src="/curve.svg" alt="second curve" className="second_curve"></img>;
 }
 
+function AvartarSection() {
+  return (
+    <div>
+      <div className="avartar_content">
+        <div className="avartar_wrapper">
+          <img src="/image-founder.webp" alt="founder's avartar" className="avartar"></img>
+        </div>
+        <div className="action_card_wrapper">
+          <div className="action_card">
+            <h2>Be the first to test</h2>
+            <p className="about">
+              Hi, I'm Louis Graham, the founder of the company: Book a demo call with me to become a beta tester for our app and kickstart your company. <br /> Apply for access below and i'll be in
+              touch to schedule a call.
+            </p>
+            <div>
+              <button className="action_button">Apply for access</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+function Footer() {
+  return (
+    <div className="footer">
+      <div className="footer_content">
+        <div className="footer_logo">
+          <img src="/logo-dark.svg" alt="a logo"></img>
+        </div>
+        <div className="socials">
+          <img src="/icon-facebook.svg" alt="facebook icon" className="facebook"></img>
+          <img src="/icon-twitter.svg" alt="twitter icon" className="twitter"></img>
+          <img src="/icon-instagram.svg" alt="instagram icon"></img>
+        </div>
+      </div>
+    </div>
+  );
+}
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
