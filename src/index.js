@@ -21,6 +21,9 @@ function Hero() {
     <div className="hero">
       <Header />
       <Herobody />
+      <div className="phone-container">
+        <img src="/image-hero.webp" alt="a cellphone" className="phone"></img>
+      </div>
     </div>
   );
 }
@@ -35,7 +38,7 @@ function Header() {
 }
 
 function Curve() {
-  return <img src="/ornamental.png" alt="a curve" className="curve"></img>;
+  return <img src="/curve2.svg" alt="a curve" className="curve"></img>;
 }
 
 function Herobody() {
@@ -45,9 +48,6 @@ function Herobody() {
         Data <span>tailored</span> to your needs.
       </h1>
       <button className="hero_btn">Learn more</button>
-      <div className="phone-container">
-        <img src="/image-hero.webp" alt="a cellphone" className="phone"></img>
-      </div>
     </div>
   );
 }
@@ -99,7 +99,7 @@ function AvartarSection() {
               Hi, I'm Louis Graham, the founder of the company: Book a demo call with me to become a beta tester for our app and kickstart your company. <br /> Apply for access below and i'll be in
               touch to schedule a call.
             </p>
-            <div>
+            <div className="action_btn">
               <button className="action_button">Apply for access</button>
             </div>
           </div>

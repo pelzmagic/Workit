@@ -32,11 +32,14 @@ body {
   border: 0;
   border-bottom: 1px solid var(--GREEN);
   color: var(--WHITE);
+  cursor: pointer;
+}
+.header_btn:hover {
+  color: var(--GREEN);
 }
 .header {
   width: 80%;
   margin: auto;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,11 +51,13 @@ body {
   background-image: url(/public/bg-pattern-1.svg), url(/public/bg-pattern-2.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: -9vw 13vh, 92vw 40vh;
+  /* position: relative; */
 }
 .curve {
   width: 100%;
-  position: absolute;
-  top: 75vh;
+  height: 100px;
+  fill: var(--PURPLE);
+  /* border: 1px solid white; */
 }
 h1 {
   font-family: "Fraunces", serif;
@@ -65,7 +70,6 @@ span {
 }
 .hero_content {
   width: 30%;
-  border: 1px solid red;
   margin: auto;
   margin-top: 3.5rem;
   display: flex;
@@ -78,13 +82,17 @@ span {
   border: 0;
   padding: 0.75rem 2rem;
   margin: auto;
+  cursor: pointer;
 }
-
+.hero_btn:hover {
+  background-color: var(--PURPLE);
+  color: var(--GREEN);
+  outline: 1px solid var(--GREEN);
+}
 .phone-container {
   position: absolute;
   width: 40%;
-  border: 1px solid red;
-  top: 28rem;
+  top: 31rem;
   z-index: 9999;
   left: 50%;
   transform: translateX(-50%);
@@ -94,11 +102,10 @@ span {
 }
 .main {
   background-color: var(--GRAY);
-  height: 610px;
+  /* height: 610px; */
   padding-top: 12rem;
 }
 .features_container {
-  border: 1px solid red;
   width: 80%;
   margin: auto;
   display: flex;
@@ -128,13 +135,11 @@ span {
   border-radius: 50%;
 }
 .features_wrapper {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .second_curve {
-  border: 1px solid red;
   width: 100%;
   height: 100px;
 }
@@ -147,7 +152,6 @@ span {
 }
 .avartar_content {
   width: 77%;
-  border: 1px solid red;
   margin: auto;
   position: relative;
 }
@@ -160,6 +164,11 @@ span {
   background-color: var(--GREEN);
   padding: 0.75rem 2rem;
   border: 0;
+}
+.action_button:hover {
+  background-color: var(--PURPLE);
+  color: var(--GREEN);
+  outline: 1px solid var(--GREEN);
 }
 .action_card_wrapper {
   background-color: var(--PURPLE);
@@ -199,7 +208,6 @@ h2 {
   text-align: center;
 }
 .footer_content {
-  border: 1px solid red;
   width: 7%;
   margin: auto;
   display: flex;
@@ -212,4 +220,109 @@ h2 {
 }
 .footer_logo {
   text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .hero_content {
+    width: 33%;
+  }
+  .hero {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 1390px) {
+  .hero_content {
+    width: 40%;
+  }
+  .hero {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 1240px) {
+  .hero_content {
+    width: 40%;
+  }
+  .hero {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 428px) {
+  .features_container {
+    flex-direction: column;
+    width: 90%;
+  }
+  .header {
+    padding-top: 2rem;
+    width: 95%;
+  }
+  .hero {
+    background-image: none;
+  }
+  .hero_content {
+    width: 95%;
+  }
+  h1 {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: auto;
+  }
+  .hero {
+    height: 60vh;
+  }
+  .curve {
+    height: 50px;
+  }
+  .second_curve {
+    height: 50px;
+  }
+  .phone-container {
+    width: 80%;
+    top: 26rem;
+  }
+  .avartar_content {
+    width: 100%;
+    padding-top: 7rem;
+    height: 110vh;
+  }
+  .main {
+    padding-top: 4rem;
+  }
+  .avartar_wrapper {
+    height: auto;
+    display: block;
+  }
+  .avartar {
+    width: 100%;
+    height: 100%;
+  }
+  .action_card_wrapper {
+    width: 100%;
+    padding: 2rem;
+    background-image: none;
+    top: 26rem;
+    z-index: 9999;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about {
+    text-align: center;
+  }
+  .action_btn {
+    margin: auto;
+  }
+  .footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .footer_content {
+    width: 40%;
+  }
+  .phone-container {
+    top: 20rem;
+  }
 }
